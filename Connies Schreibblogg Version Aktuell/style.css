@@ -1,0 +1,1413 @@
+/*
+Theme Name: Connies Schreibblogg
+Author: Connie Ruoff
+Author URI: https://schreibblogg.de/
+Description: Beispiel-Theme für einen Literaturblog
+Version: 0.6 26-07-24
+*/
+
+/* Universal Styles */
+
+
+
+.abril-fatface-regular {
+  font-family: "Abril Fatface", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+.lato-thin {
+  font-family: "Lato", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.lato-light {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.lato-regular {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.lato-bold {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.lato-black {
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.lato-thin-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.lato-light-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.lato-regular-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.lato-bold-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.lato-black-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+body {
+  margin-top: auto;
+ 	color: black;
+	font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+	
+  padding-top: 10px;
+	font-size:.8em;
+  font-size: 22px;
+  text-align: center;
+	background-color: darkblue;
+	opacity: 0.9;
+	
+} 
+
+/*body {
+    background-color: #122F00;
+    color: white;
+    padding-top: 120px;
+    background-image: radial-gradient(circle, white, transparent);
+    background-size: cover;
+    background-attachment: fixed;
+    background-blend-mode: soft-light;
+}
+*/
+/*
+body.custom-background {
+    background-size: auto;
+    background-blend-mode: normal;
+}
+*/
+
+
+a{
+    color: black;
+
+}
+
+
+
+
+
+h1 {
+	
+	font-family:"Abril Fatface", serif;
+	font-style: italic;
+  	margin: 0;
+ 	font-size: 2em;
+	padding-top: 2.2em;
+	padding-bottom: 2.6em;
+	width: 100%;
+	background-color: whitesmoke;
+	color: black;
+	
+}
+h2{
+	
+	font-family: "Abril Fatface", serif;
+	 font-style: italic;
+  	margin: 0;
+ 	font-size: 1.8rem;
+	padding-top: 50px;
+	padding-bottom: 30px;
+	background-color: whitesmoke;
+}
+h3{
+	font-family: "Abril Fatface", serif;
+	 font-style: italic;
+	margin: 0;
+	padding-top: 30px;
+	padding-bottom: 20px;
+	font-size:1.5rem;
+}
+h4 {
+	
+  font-family: "Abril Fatface", serif;
+	 font-style: italic;
+  margin: 0;
+  padding-top: 30px;
+	font-size:1.2rem; 
+}
+p{
+	font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+	 
+  margin: 0;
+  padding-top: 30px;
+	font-size:.8em;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+ 
+/*#hintergrund{
+	
+	background-size: cover;
+	background-repeat: no-repeat;
+  	object-fit: cover;
+  	background-attachment: fixed;	
+    background-blend-mode: soft-light;
+	background-image: url("https://schreibblogg.de/wp-content/uploads/2022/03/Schlagschatten-LOGO-Kopie.jpg") ;
+	opacity:.9;
+}
+
+ */
+ /* Header Section */
+
+/*header {
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  height: 69px;
+  background-color: black;
+  border-bottom: 1px solid seashell;
+  align-items: center;
+}
+
+header img {
+  height: 7em;
+  padding-left: 10px;
+}*/
+  
+#hintergrund {
+ margin-top: -200px;
+ height: 1100px;
+  width: 100%;
+  background-image: url("https://schreibblogg.de/wp-content/uploads/2022/03/Schlagschatten-LOGO-Kopie.jpg") ;
+  background-size: cover;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  padding-top: 100px;
+  background-color: darkblue;
+  opacity: 0.8;
+  position: fixed;
+	flex-shrink: 1;
+} 
+#hintergrund_connieruoff {
+ margin-top: -200px;
+ height: 1100px;
+  width: 100%;
+  background-image: url("https://schreibblogg.de/wp-content/uploads/2021/08/IMG_0037.jpg") ;
+  background-size: cover;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  padding-top: 100px;
+  background-color: darkblue;
+  opacity: 0.8;
+  position: fixed;
+	flex-shrink: 1;
+} 
+
+Hintergrund
+.hintergrund {
+ margin-top: -200px;
+ height: auto;
+  width: 100%;
+  background-image: url("https://schreibblogg.de/wp-content/uploads/2022/03/Schlagschatten-LOGO-Kopie.jpg") ;
+  background-size: cover;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  padding-top: 100px;
+  background-color: darkblue;
+  opacity: 0.9;
+  position: fixed;
+	flex-shrink: 1;
+}   
+/* Header Section */
+
+header {
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  height: 80px;
+  opacity: 0.9;
+  background-color: whitesmoke;
+  align-items: center;
+}
+
+header img {
+  height: 140px;
+  padding-left: 20px;
+	opacity: .9;
+}
+
+nav {
+  text-align: right;
+  flex-grow: 1;
+}
+
+nav span {
+  display: inline-block;
+  padding: 2em 1em;
+	font-size: .8rem;
+}
+
+@media screen and (min-width:800px) {
+    .site-header {
+       /* float:left;
+        width:30%;*/
+    }
+}
+
+/*
+
+.site-search {
+    position: relative;
+}
+
+.site-search input[type="search"] {
+    width: 10%;
+    padding: .5em 95em0px .5em .5em;
+    box-sizing: border-box;
+	display: inline-block;
+    color:black;
+}
+
+.site-search input[type="submit"] {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 30px;
+    color:black;
+}
+/*@media screen and (min-width:710px) and (max-width:800px) {
+    
+    .site-search {
+        position: absolute;
+        top:0;
+        right:1em;
+        width:250px;
+    }
+    
+}
+
+/* Main Section */
+
+.main {
+  
+  opacity:0.95;
+  width: 80%;
+  margin: auto;
+  /*text-align: left;*/
+ 
+
+}
+
+
+.main-post {
+  padding-top: 700px;
+  opacity: 0.9;
+  width: 77%;
+  margin: auto;
+}
+
+ main img{
+	 margin: auto;
+
+	height: 400px;
+  width:600px;
+}  
+/* .abteilung{
+  margin-top: 30em;
+  background-color:whitesmoke;
+	width: 80%;
+ 	padding: 30px;
+ }*/
+
+  .abteilung{
+  margin-top: 700px;
+  background-color:whitesmoke;
+ padding-left: 10rem;
+	padding-right: 10rem;
+ }
+.abteilung-post{
+	width:90%;
+	margin-top: 700px;
+  background-color:whitesmoke;
+	 padding: 1em;
+ 
+
+}
+.container {
+    
+    margin:0 auto;
+	display: flex;
+  justify-content: flex-end;
+}
+}
+
+content {
+	margin: auto;
+	text-align: left;
+}
+
+/*Front Page*/
+  
+  Store Section 
+  
+  #store {
+    height: auto;
+    width: 90%;
+    background-color: darkslateblue;
+    padding-top: 900px;
+  }
+  
+  .item {
+    padding: 5px;
+  }
+  
+  .item img {
+    height: 200px;
+    width: 300px;
+   /* margin: 30px;*/
+    display: inline-flex;
+    object-fit: cover;
+	padding-top: 50px;
+ 	
+  }
+  
+  .item span {
+    display: block;
+   /* padding-top: 100px;*/
+    font-weight: bold;
+    text-align: center;
+  }
+.cover {
+    padding: 5px;
+  }
+  
+  .cover img {
+   height: auto;
+    width: 25em;
+    margin: 30px;
+    display: inline-flex;
+    object-fit: cover;
+	padding-top: 50px;
+ 	
+  }
+  
+.absatz{
+	padding-top: 5em;
+}
+.quote{
+	margin: 0 auto;
+	padding: 1em;
+	height:10em;
+	background-color:darkblue;
+	color: whitesmoke;
+}
+.quote h3{
+	color:whitesmoke;
+}
+  /*posts*/
+
+
+/* Navigation */
+
+#toggle-nav {
+    position: absolute;
+    right: 1em;
+    top: 0;
+    background: black;
+    width: 60px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.js .site-nav {
+    display:none;
+}
+
+.site-nav {
+    margin-top:1em;
+}
+
+.site-nav ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.site-nav li {
+    margin-bottom: 2px;
+}
+
+.site-nav a {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 1em;
+    display: block;
+    text-decoration: none;
+}
+
+.site-nav a:hover {
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.site-nav .current-menu-item a {
+    background:white;
+    color:black;
+}
+
+/*@media screen and (min-width:710px) and (max-width:800px) {
+    .site-nav li {
+        margin-right: 2px;
+        float: left;
+    }
+}
+
+@media screen and (min-width:710px) {
+    .js .site-nav {
+        display:block;
+    }
+    
+    #toggle-nav {
+        display:none;
+    }
+}
+
+/* Main 
+
+@media screen and (max-width:800px) {
+
+    .site-main {
+        padding-top:2em;
+    }
+    
+}
+
+@media screen and (min-width:600px) {
+    .site-main {
+        float:right;
+        width:100%;
+    }
+}
+
+@media screen and (min-width:800px) {
+    .site-main {
+        width:70%;
+    }
+}
+
+
+/* Single .site-main .site-content*/
+
+
+.spbuchsatz{
+	background-color: whitesmoke;
+}
+  .abteilung_spbuchsatz{
+  margin-top: 10em;
+  background-color:whitesmoke;
+ padding-left: 10em;
+	padding-right: 10em;
+ }
+
+}
+/* Content */
+
+.site-content {
+     padding:0 1em;
+}
+
+/*@media screen and (min-width:600px) {
+    .site-content {
+        float:left;
+        width:70%;
+    }
+    
+    .page-template-template-no-sidebar .site-content,
+    .page-id-40244 .page-id-19011 .page-id-19017 .site-content,
+    .home .site-content {
+        width:100%;
+    }
+*/
+
+.archive h1 a{
+	margin-top: -20em;
+	font-size: 2rem;
+	}
+.infobox {
+    padding:1em;
+    background:gold;
+    color:black;
+}
+.page h1 a {
+	margin-top: -5em;
+	padding: 1em;
+	font-size: 2rem;
+	color: black;
+	/*background-color: darkgray;*/
+}
+.page p  {
+	font-size: 1.4 rem;
+	text-align: left;
+	
+}
+
+.page thumbnail{
+	height: auto;
+  width: 100%;
+ 
+  background-size: cover;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  padding-top: 100px;
+	
+}
+	
+}
+.post h1 a{
+	margin-top: -20em;
+	
+}  
+.post p {
+	font-size: 1.4 rem;
+	text-align: left;
+}
+	.post, .filme {
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    margin-top: 2em;
+    padding-top: 1em;
+    clear:both;
+
+	
+}
+
+.post:first-child,
+.filme:first-child {
+    margin-top:0;
+    border:none;
+    padding-top:0;
+}
+
+.post-meta {
+    font-size:.8em;
+    
+}
+
+.wp-post-image {
+   
+    margin:.3em 1em 1em 0;
+    width:100%;
+	height: auto;
+	
+ 
+  background-size: cover;
+  background-repeat: no-repeat;
+  object-fit: cover;
+}
+
+/*.wp-post-image {
+    
+    margin: auto;
+
+	padding-top: 3em;
+	height: 30em;
+  width: 100%;
+ 
+  background-size: cover;
+  background-repeat: no-repeat;
+  object-fit: cover;
+
+}*/
+
+.single h1 a {
+	margin-top: -20em;
+
+}
+
+.single  p  {
+	font-size: 1.4 rem;
+	text-align: left;
+	
+}
+.single-post-image {
+
+	width:100%;
+	height: auto;
+	background-color: whitesmoke;
+	background-size: cover;
+  background-repeat: no-repeat;
+  object-fit: cover;
+	
+}
+
+
+	
+ Contact Section 
+ 
+  
+  /* Footer Section 
+  
+ footer {
+	 
+   margin-top: 200px;
+	
+	 text-align: center;
+    padding-left: 20px;
+	 background-color: black;
+	 color: white;
+  }
+footer .flex-container{
+	padding:200px;
+	background-color:black;
+	color:white;
+	 flex-direction: column;
+}
+footer a{
+	font-size:1rem;
+	color:white;
+}
+
+  footer #contact {
+    width: 60%;
+	  height: 200px;
+	  background-color: black;
+	  opacity: 0.8;
+	  color: white;
+  }
+
+/* Footer */
+/*footer {
+	 
+   margin-top: 200px;
+	
+	 text-align: center;
+    
+	 background-color: dark-blue;
+	 color: white;
+  }*/
+footer .flex-container{
+	padding-top:300px;
+	background-color:darkblue;
+	opacity: .9;
+	color:white;
+	 flex-direction: column;
+}
+
+.nav_social ul,
+.nav_secondary ul {
+    padding:0;
+    margin:0;
+    list-style: none;
+}
+
+.nav_social li,
+.nav_secondary li {
+    margin-bottom: 2px;
+} 
+
+.nav_social a,
+.nav_secondary a {
+    display:block;
+    padding:1em;
+    background:rgba(0,0,0,0.3);
+    text-decoration: none;
+}
+
+.nav_social a:hover,
+.nav_secondary a:hover {
+    background:rgba(0,0,0,0.15);
+}
+
+.nav_secondary .current-menu-item a {
+    background:white;
+    color:black;
+}
+
+.nav_social .twitter a:hover {
+    background:#55acee;
+    color:white;
+}
+
+.nav_social .facebook a:hover {
+    background:#3b5998;
+    color:white;
+}
+
+
+/@media screen and (min-width:600px) {
+    .site-footer {
+        float:left;
+        width:100%;
+    }
+    
+    .nav_secondary {
+        float:right;
+    }
+    
+    .nav_social {
+        float:left;
+    }
+    
+    .nav_social li,
+    .nav_secondary li {
+        float:left;
+        margin-right:2px;
+    }
+
+	
+	/* Kapitel 11
+	 * * {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #122F00;
+    color: white;
+    padding-top: 120px;
+    background-image: radial-gradient(circle, white, transparent);
+    background-size: cover;
+    background-attachment: fixed;
+    background-blend-mode: soft-light;
+}
+
+/* 
+body.custom-background {
+    background-size: auto;
+    background-blend-mode: normal;
+}
+
+
+img {
+    max-width:100%;
+    height:auto;
+}
+
+a {
+    color:white;
+}
+
+.container {
+    max-width:1100px;
+    margin:0 auto;
+}
+
+
+.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+.aligncenter,
+div.aligncenter {
+    display: block;
+    margin: 5px auto 5px auto;
+}
+
+.alignright {
+    float:right;
+    margin: 5px 0 20px 20px;
+}
+
+.alignleft {
+    float: left;
+    margin: 5px 20px 20px 0;
+}
+
+a img.alignright {
+    float: right;
+    margin: 5px 0 20px 20px;
+}
+
+a img.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+a img.alignleft {
+    float: left;
+    margin: 5px 20px 20px 0;
+}
+
+a img.aligncenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.wp-caption {
+    background: #fff;
+    color:black;
+    border: 1px solid #f0f0f0;
+    max-width: 96%; /* Image does not overflow the content area 
+    padding: 5px 3px 10px;
+    text-align: center;
+}
+
+.wp-caption.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignleft {
+    margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignright {
+    margin: 5px 0 20px 20px;
+}
+
+.wp-caption img {
+    border: 0 none;
+    height: auto;
+    margin: 0;
+    max-width: 98.5%;
+    padding: 0;
+    width: auto;
+}
+
+.wp-caption p.wp-caption-text {
+    font-size: 11px;
+    line-height: 17px;
+    margin: 0;
+    padding: 0 4px 5px;
+}
+
+/* Gallery
+
+.gallery a {
+	cursor: default;
+}
+
+.gallery {
+	margin: auto -6px;
+	padding: 6px 0;
+	line-height: 1;
+	overflow-x: hidden;
+}
+
+.ie7 .gallery,
+.ie8 .gallery {
+	margin: auto;
+}
+
+.gallery .gallery-item {
+	float: left;
+	margin: 0;
+	text-align: center;
+	padding: 6px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.ie7 .gallery .gallery-item,
+.ie8 .gallery .gallery-item {
+	padding: 6px 0;
+}
+
+.gallery .gallery-caption,
+.gallery .gallery-icon {
+	margin: 0;
+}
+
+.gallery .gallery-caption {
+	font-size: 13px;
+	margin: 4px 0;
+}
+
+.gallery-columns-1 .gallery-item {
+	width: 100%;
+}
+
+.gallery-columns-2 .gallery-item {
+	width: 50%;
+}
+
+.gallery-columns-3 .gallery-item {
+	width: 33.333%;
+}
+
+.ie8 .gallery-columns-3 .gallery-item,
+.ie7 .gallery-columns-3 .gallery-item {
+	width: 33%;
+}
+
+.gallery-columns-4 .gallery-item {
+	width: 25%;
+}
+
+.gallery-columns-5 .gallery-item {
+	width: 20%;
+}
+
+.gallery-columns-6 .gallery-item {
+	width: 16.665%;
+}
+
+.gallery-columns-7 .gallery-item {
+	width: 14.285%;
+}
+
+.gallery-columns-8 .gallery-item {
+	width: 12.5%;
+}
+
+.gallery-columns-9 .gallery-item {
+	width: 11.111%;
+}
+
+.gallery img {
+	max-width: 100%;
+	height: auto;
+	border: none;
+	padding: 0;
+}
+
+
+.btn {
+    padding:1em 1.5em;
+    border-radius: 3px;
+    background:rgba(255,255,255,0.3);
+    display: inline-block;
+}
+
+/* Header 
+
+.site-header {
+    padding:0 1em;
+    position: relative;
+}
+
+.logo {
+    width:200px;
+    padding:1em;
+    background:rgba(255,255,255,0.3);
+    display:block;
+    margin-bottom: 1em;
+}
+
+@media screen and (min-width:800px) {
+    .site-header {
+        float:left;
+        width:30%;
+    }
+}
+
+/* Suche 
+
+.site-search {
+    position: relative;
+}
+
+.site-search input[type="search"] {
+    width: 100%;
+    padding: .5em 90px .5em .5em;
+    box-sizing: border-box;
+    color:black;
+}
+
+.site-search input[type="submit"] {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 80px;
+    color:black;
+}
+
+@media screen and (min-width:710px) and (max-width:800px) {
+    
+    .site-search {
+        position: absolute;
+        top:0;
+        right:1em;
+        width:250px;
+    }
+    
+}
+
+
+/* Navigation 
+
+#toggle-nav {
+    position: absolute;
+    right: 1em;
+    top: 0;
+    background: black;
+    width: 60px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.js .site-nav {
+    display:none;
+}
+
+.site-nav {
+    margin-top:1em;
+}
+
+.site-nav ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.site-nav li {
+    margin-bottom: 2px;
+}
+
+.site-nav a {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 1em;
+    display: block;
+    text-decoration: none;
+}
+
+.site-nav a:hover {
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.site-nav .current-menu-item a {
+    background:white;
+    color:black;
+}
+
+@media screen and (min-width:710px) and (max-width:800px) {
+    .site-nav li {
+        margin-right: 2px;
+        float: left;
+    }
+}
+
+@media screen and (min-width:710px) {
+    .js .site-nav {
+        display:block;
+    }
+    
+    #toggle-nav {
+        display:none;
+    }
+}
+
+/* Main
+
+@media screen and (max-width:800px) {
+
+    .site-main {
+        padding-top:2em;
+    }
+    
+}
+
+@media screen and (min-width:600px) {
+    .site-main {
+        float:right;
+        width:100%;
+    }
+}
+
+@media screen and (min-width:800px) {
+    .site-main {
+        width:70%;
+    }
+}
+
+/* Content 
+
+.site-content {
+     padding:0 1em;
+}
+
+@media screen and (min-width:600px) {
+    .site-content {
+        float:left;
+        width:70%;
+    }
+    
+    .page-template-template-no-sidebar .site-content,
+    .page-id-40 .site-content,
+    .home .site-content {
+        width:100%;
+    }
+}
+
+.post, .filme {
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    margin-top: 2em;
+    padding-top: 1em;
+    clear:both;
+}
+
+.post:first-child,
+.filme:first-child {
+    margin-top:0;
+    border:none;
+    padding-top:0;
+}
+
+.post-meta {
+    font-size:.8em;
+    opacity: .7;
+}
+
+.wp-post-image {
+    float:left;
+    margin:.3em 1em 1em 0;
+    max-width: 45%;
+}
+
+.infobox {
+    padding:1em;
+    background:gold;
+    color:black;
+}
+
+/* Startseite 
+
+.container-filme {
+    background:rgba(0,0,0,0.2);
+    padding:1em;
+}
+
+ .container-filme .filme:first-child {
+     padding-top:0;
+     margin-top:0;
+     border:none;
+}
+
+.container-filme .filme .wp-post-image {
+    float:none;
+    margin:0;
+    max-width:100%;
+}
+
+@media screen and (min-width:500px) {
+    
+    .container-filme {
+        float:left;
+        width:100%;
+        margin-bottom: 2em;
+        padding-left: .5em;
+        padding-right: .5em;
+    }
+
+    .container-filme .filme {
+        padding-top:0;
+        padding-left:.5em;
+        padding-right:.5em;
+        margin-top:0;
+        border:none;
+        float:left;
+        clear:none;
+        width:33.333%;
+    }
+    
+    .single-film {
+       background:rgba(0,0,0,0.2);
+       padding:.5em;
+    }
+
+    .container-posts {
+        clear:both;
+    }
+}
+
+/* Pagination 
+
+.pagination {
+    clear:both;
+    padding:1em;
+    background:rgba(0,0,0,0.2);
+}
+
+/* Kommentare 
+
+div.comment-form {
+    margin-top: 4em;
+}
+
+.comment-form input[type=text],
+.comment-form input[type=email],
+.comment-form input[type=url],
+.comment-form textarea {
+    padding:.5em;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.1);
+    border: 2px solid rgba(255, 255, 255, 0.22);
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.24);
+    margin: .2em 0 1em 0;
+    width:100%;
+}
+
+.comment-form input[type=submit] {
+    background: rgba(255, 255, 255, 0.17);
+    padding: .75em 1.2em;
+    border: 2px solid rgba(255, 255, 255, 0.61);
+    margin-top: -1em;
+}
+
+.comment-list {
+    margin-top: 5em;
+}
+
+.comment-list ul {
+    padding:0;
+    margin:0;
+    list-style: none;
+}
+
+.single-comment {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 1em;
+    margin-bottom: 1em;
+}
+
+.single-comment .children {
+    margin-top:1em;
+}
+
+.single-comment .avatar {
+    float:right;
+    border-radius: 32px;
+    object-fit: cover;
+}
+*/
+Sidebar
+
+.site-sidebar {
+    padding:1em;
+}
+
+.widget {
+    background:rgba(0,0,0,0.3);
+    padding:1em;
+    margin-bottom: 1em;
+}
+
+@media screen and (min-width:600px) {
+    .site-sidebar {
+        float:right;
+        width:30%;
+    }
+}
+
+@media screen and (min-width:800px) {
+    .site-sidebar {
+        margin-top:5em;
+    }
+}
+
+
+
+/* Footer 
+
+.site-footer {
+    padding:1em;
+    background:rgba(0,0,0,0.3);
+    margin-top: 5em;
+}
+
+
+.nav-social ul,
+.nav-secondary ul {
+    padding:0;
+    margin:0;
+    list-style: none;
+}
+
+.nav-social li,
+.nav-secondary li {
+    margin-bottom: 2px;
+} 
+
+.nav-social a,
+.nav-secondary a {
+    display:block;
+    padding:1em;
+    background:rgba(0,0,0,0.3);
+    text-decoration: none;
+}
+
+.nav-social a:hover,
+.nav-secondary a:hover {
+    background:rgba(0,0,0,0.15);
+}
+
+.nav-secondary .current-menu-item a {
+    background:white;
+    color:black;
+}
+
+.nav-social .twitter a:hover {
+    background:#55acee;
+    color:white;
+}
+
+.nav-social .facebook a:hover {
+    background:#3b5998;
+    color:white;
+}
+
+
+@media screen and (min-width:600px) {
+    .site-footer {
+        float:left;
+        width:100%;
+    }
+    
+    .nav-secondary {
+        float:right;
+    }
+    
+    .nav-social {
+        float:left;
+    }
+    
+    .nav-social li,
+    .nav-secondary li {
+        float:left;
+        margin-right:2px;
+    }
+}
+*/
+/* WooCommerce */
+
+/* .woocommerce .woocommerce-error, .woocommerce .woocommerce-info, .woocommerce .woocommerce-message {
+    background:red;
+} */
+
